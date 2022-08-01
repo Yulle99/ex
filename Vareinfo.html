@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartwear </title>
+    <link rel="stylesheet" href="vareinfo.css">
+</head>
+<body>
+    <nav>nav</nav>
+    <main>
+        <div class="container3">
+            <div class="wrapper">
+                <div class="product-box">
+                    <div class="all-images">
+                        <div class="small-images">
+                            <img src="img4.jpg" onclick="clickimg(this)">
+                            <img src="img1.jpg" onclick="clickimg(this)">
+                            <img src="img3.jpg" onclick="clickimg(this)">
+                            <img src="img3.jpg" onclick="clickimg(this)">
+                        </div>
+                        <div class="main-images">
+                            <img src="img4.jpg" id="imgBox">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <div class="content">
+                        <h2>vare navn</h2>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">999 kr</p>
+                    </div>
+                    <p>size : <select name size>
+                        <option value="Small">small</option>
+                        <option value="mellem">mellem</option>
+                        <option value="large">large</option>
+                        <option value="exlarge">extra large</option>
+                    </select> </p>
+                    <p>left in stock <b>5</b></p>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        add to cart
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>
+                        Køb Nu
+                    </button>
+                </div>
+                        
+            </div>    
+                
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+    <script>
+        function clickimg(smallImg){
+            var fullImg = document.getElementById("imagebox")
+            fullImg.src = smallImg.src;
+        }
+    </script>
+    
+</html>

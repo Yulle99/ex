@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*pc*/
+.container{
+       display:grid;
+       grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+       grid-template-rows: 50px 1fr 1fr 1fr 1fr 100px ;
+       grid-template-areas:
+            "nav nav nav nav nav"
+            "filter main main main main"
+            "filter main main main main"
+            "filter main main main main"
+            "filter main main main main"
+            "footer footer footer footer footer"
+}
+
+
+/*nav start*/
+nav{
+    background-color: aquamarine;
+    grid-area: nav;
+}
+/*nav slut*/
+/*filter start*/
+
+#filter{
+    background-color: aquamarine;
+    grid-area: filter;
+}
+/*filter slut*/
+/*main start*/
+.main{
+    background-color: rgb(100, 198, 165);
+    grid-area: main; 
+}
+
+h1{
+    padding: 50px 0 0 100px;
+}
+
+.mainp{
+    padding-left: 100px ;
+}
+
+.prudokt{
+    padding: 10px 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/*vare start*/
+.vare{/*https://www.w3schools.com/howto/howto_css_product_card.asp*/
+    background-color: antiquewhite;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.vareimg{/*https://www.w3schools.com/howto/howto_css_product_card.asp*/
+    width: 214px;
+    height:300px;
+    padding: 3px 3px 3px 3px ;
+}
+
+h4{
+    font-size: 20px;
+    
+}
+
+.pris{/*https://www.w3schools.com/howto/howto_css_product_card.asp*/
+    color: grey;
+    font-size: 22px;
+   
+}
+
+.vare button {/*https://www.w3schools.com/howto/howto_css_product_card.asp*/
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .vare button:hover {/*https://www.w3schools.com/howto/howto_css_product_card.asp*/
+    background-color: aqua;
+  }
+/*vare slut*/
+/*main slut*/
+/*footer start*/
+footer{
+    background-color: black;
+    color: #fff;
+    grid-area: footer;
+}
+/*footer slut*/
+/*pc slut*/
+/*movil start*/
